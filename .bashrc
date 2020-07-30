@@ -115,4 +115,6 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-cat .mygreeting
+
+alias update="sudo apt-get update && sudo apt-get upgrade && sudo apt-get full-upgrade autoremove"
+cat ~/.mygreeting

@@ -117,4 +117,6 @@ if ! shopt -oq posix; then
 fi
 
 alias update="sudo apt-get update && sudo apt-get upgrade && sudo apt-get full-upgrade autoremove"
-cat ~/.mygreeting
+alias cls="clear"
+
+cat ~/.mygreeting | lolcat

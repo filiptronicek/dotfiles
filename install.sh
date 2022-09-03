@@ -1,6 +1,4 @@
-#!/usr/bin/bash -i
-
-set -ex
+#!/bin/bash
 
 sudo apt install zsh
 sudo apt install git-core curl fonts-powerline

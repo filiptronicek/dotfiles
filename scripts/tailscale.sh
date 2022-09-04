@@ -14,9 +14,9 @@ fi
     sudo tailscaled &
 
 if [ -n "${TS_STATE_TAILSCALE_EXAMPLE}" ]; then
-    sudo -E tailscale up &
+    sudo -E tailscale up --authkey=$TAILSCALE_AUTHKEY &
 else
-    sudo -E tailscale up --hostname "gitpod-${GITPOD_GIT_USER_NAME// /-}-$(echo ${GITPOD_WORKSPACE_CONTEXT} | jq -r .repository.name)" --ssh &
+    sudo -E tailscale up --hostname "gitpod-${GITPOD_GIT_USER_NAME// /-}-$(echo ${GITPOD_WORKSPACE_CONTEXT} | jq -r .repository.name)" --ssh  --authkey=$TAILSCALE_AUTHKEY &
     # store the tailscale state into gitpod user
     gp env TS_STATE_TAILSCALE_EXAMPLE="$(sudo cat /var/lib/tailscale/tailscaled.state)"
 fi

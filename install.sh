@@ -1,8 +1,9 @@
 #!/bin/bash
 
-sudo apt install zsh
-sudo apt install git-core curl fonts-powerline
+sudo apt install zsh git-core curl fonts-powerline  -y
 
 npm i -g vsce ovsx
 
-./scripts/tailscale.sh &
+if [ -n "${GITPOD_WORKSPACE_URL}" ]; then
+    ~/.dotfiles/scripts/tailscale.sh &
+fi

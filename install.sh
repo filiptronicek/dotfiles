@@ -7,3 +7,5 @@ npm i -g vsce ovsx
 if [ -n "${GITPOD_WORKSPACE_URL}" ]; then
     ~/.dotfiles/scripts/tailscale.sh &
 fi
+
+alias gitpod="gp"

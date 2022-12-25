@@ -11,3 +11,4 @@ fi
 alias gitpod="gp"
 alias amp="git add . && git commit --amend --no-edit && git push -f" # amend, push
 alias ampu="git add . && git commit --amend && git push -f" # amend, push, update commit message
+alias sizeof="du -sh"

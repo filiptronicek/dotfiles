@@ -1,6 +1,6 @@
 <?xml version="1.1" encoding="UTF-8"?>
 <!DOCTYPE keyboard SYSTEM "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
-<!--Last edited by Ukelele version 359 on 2023-02-13 at 09:12 (CET)-->
+<!--Last edited by Ukelele version 359 on 2023-03-13 at 11:44 (CET)-->
 <keyboard group="126" id="-9364" name="Filip is coding" maxout="1">
     <layouts>
         <layout first="0" last="17" mapSet="16c" modifiers="f4"/>
@@ -273,7 +273,7 @@
             <key code="3" output="F"/>
             <key code="4" output="H"/>
             <key code="5" output="G"/>
-            <key code="6" output="Y"/>
+            <key code="6" output="Z"/>
             <key code="7" output="X"/>
             <key code="8" output="C"/>
             <key code="9" output="V"/>
@@ -1033,7 +1033,7 @@
             <when state="Prehlaska" output="Ü"/>
         </action>
         <action id="12">
-            <when state="none" output="Z"/>
+            <when state="none" output="Y"/>
             <when state="Carka" output="Ý"/>
             <when state="Prehlaska" output="Ÿ"/>
         </action>
@@ -1157,7 +1157,7 @@
             <when state="Hacek" output="Ť"/>
         </action>
         <action id="Z">
-            <when state="none" output="Y"/>
+            <when state="none" output="Z"/>
             <when state="Hacek" output="Ž"/>
         </action>
         <action id="\">

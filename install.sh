@@ -7,7 +7,7 @@ alias sizeof="du -sh"
 
 sudo apt install zsh git-core curl fonts-powerline  -y
 
-npm i -g vsce ovsx
+npm i -g vsce ovsx bun
 
 if [ -n "${GITPOD_WORKSPACE_URL}" ]; then
     ~/.dotfiles/scripts/tailscale.sh &

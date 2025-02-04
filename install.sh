@@ -1,14 +1,7 @@
 #!/bin/bash
 
-alias gitpod="gp"
-alias amp="git add . && git commit --amend --no-edit && git push -f" # amend, push
-alias ampu="git add . && git commit --amend && git push -f" # amend, push, update commit message
-alias sizeof="du -sh"
+# Source the nix installer
+SCRIPT_DIR="$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
+source "$SCRIPT_DIR/nix.sh"
 
-sudo apt install zsh git-core curl fonts-powerline  -y
-
-npm i -g vsce ovsx bun
-
-if [ -n "${GITPOD_WORKSPACE_URL}" ]; then
-    ~/.dotfiles/scripts/tailscale.sh &
-fi
+npm i -g vsce ovsx

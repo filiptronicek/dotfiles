@@ -23,3 +23,6 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 printf '\eP$f{"hook": "SourcedRcFileForWarp", "value": { "shell": "zsh" }}\x9c'
 
 eval "$(zoxide init zsh --cmd cd)"
+
+# Source nix
+source "$HOME/.nix-profile/etc/profile.d/nix.sh"

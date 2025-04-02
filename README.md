@@ -1,3 +1,3 @@
 # dotfiles
 
-My config files
+My Gitpod config files

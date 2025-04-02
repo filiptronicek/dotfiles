@@ -45,10 +45,18 @@ function install_nix_packages() {
     # Ensure we have the current user
     USER="$(id -u -n)" && export USER
 
-    # Create and set ownership of /nix directory if it doesn't exist
-    if [ ! -e /nix ]; then
+    # See if nix is installed (check `which nix` to see if it's installed)
+    if [ ! -f "$(which nix)" ]; then
         sudo mkdir -p /nix
         sudo chown -R "$USER:$USER" /nix
+
+        # Create the nixbld group
+        groupadd -r nixbld
+
+        # Create the build users (typically 1-32)
+        for n in $(seq 1 10); do
+        useradd -c "Nix build user $n" -d /var/empty -g nixbld -G nixbld -M -N -r -s "$(which nologin)" "nixbld$n"
+        done
         
         log::info "Installing nix"
         curl -sL https://nixos.org/nix/install | bash -s -- --no-daemon

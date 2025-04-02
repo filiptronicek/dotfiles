@@ -119,4 +119,4 @@ fi
 alias update="sudo apt-get update && sudo apt-get upgrade && sudo apt-get full-upgrade autoremove"
 alias cls="clear"
 
-cat ~/.mygreeting | lolcat
+source "$HOME/.nix-profile/etc/profile.d/nix.sh"

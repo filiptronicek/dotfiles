@@ -11,3 +11,5 @@ if [ -n "${GITPOD_WORKSPACE_URL}" ]; then
 fi
 
 npm i -g vsce ovsx
+
+sudo chsh "$(id -un)" --shell "/usr/bin/zsh"

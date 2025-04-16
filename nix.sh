@@ -25,7 +25,7 @@ nix_packages=(
     nixpkgs.ffmpeg
     nixpkgs.rclone
     nixpkgs.jq
-    nixpkgs.yq
+    nixpkgs.yq-go
     nixpkgs.tree
     nixpkgs.unixtools.watch
     nixpkgs.dust

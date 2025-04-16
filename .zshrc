@@ -10,8 +10,8 @@ alias ytvideo="yt-dlp -f bestvideo+bestaudio --merge-output-format mov -o '%(tit
 export PATH="/Users/filip/.cargo/bin:$PATH"
 
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
 
 # bun completions
 [ -s "/Users/filip/.bun/_bun" ] && source "/Users/filip/.bun/_bun"
@@ -26,3 +26,5 @@ eval "$(zoxide init zsh --cmd cd)"
 
 # Source nix
 source "$HOME/.nix-profile/etc/profile.d/nix.sh"
+
+export EDITOR="cursor --wait"

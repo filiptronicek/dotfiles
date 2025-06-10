@@ -21,10 +21,9 @@ nix_packages=(
 
     nixpkgs.gh
     nixpkgs.wget
-    nixpkgs.yt-dlp
-    nixpkgs.ffmpeg
+    # nixpkgs.yt-dlp
+    # nixpkgs.ffmpeg
     nixpkgs.rclone
-    nixpkgs.jq
     nixpkgs.yq-go
     nixpkgs.tree
     nixpkgs.unixtools.watch

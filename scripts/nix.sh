@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+
 # shamelessly stolen from https://github.com/axonasif/dotsh/blob/main/src/install/packages.sh
 
 nix_packages=(

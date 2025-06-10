@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # shamelessly stolen from https://github.com/WVerlaek/dotfiles-gitpod-flex/blob/main/claude/.run
 
 if command -v claude &> /dev/null; then

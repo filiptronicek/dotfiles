@@ -2,7 +2,8 @@
 
 # Source the nix installer
 SCRIPT_DIR="$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
-source "$SCRIPT_DIR/nix.sh"
+source "$SCRIPT_DIR/scripts/nix.sh"
+source "$SCRIPT_DIR/scripts/claude.sh"
 
 if [ -n "${GITPOD_WORKSPACE_URL}" ]; then
     # authenticate gh cli

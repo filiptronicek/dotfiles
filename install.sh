@@ -14,6 +14,7 @@ fi
 if [ -n "${GITPOD_ENVIRONMENT_ID}" ]; then
     # authenticate gh cli for Gitpod
     GH_TOKEN=$(awk -F= '/^password=/ {print $2}' /usr/local/gitpod/shared/git-secrets/*)
+    gh auth login --with-token <<< "$GH_TOKEN"
 fi
 
 npm i -g vsce ovsx

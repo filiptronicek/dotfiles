@@ -20,7 +20,7 @@ fi
 npm i -g vsce ovsx
 
 # Install oh-my-zsh
-sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+KEEP_ZSHRC=yes sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 
 # Change default shell to zsh
 sudo chsh "$(id -un)" --shell "/usr/bin/zsh"

@@ -28,3 +28,8 @@ eval "$(zoxide init zsh --cmd cd)"
 source "$HOME/.nix-profile/etc/profile.d/nix.sh"
 
 export EDITOR="cursor --wait"
+
+export ZSH="$HOME/.oh-my-zsh"
+ZSH_THEME="robbyrussell"
+plugins=(git)
+source $ZSH/oh-my-zsh.sh

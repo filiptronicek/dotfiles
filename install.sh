@@ -2,7 +2,7 @@
 
 # Source the nix installer
 SCRIPT_DIR="$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
-source "$SCRIPT_DIR/scripts/nix.sh"
+# source "$SCRIPT_DIR/scripts/nix.sh"
 source "$SCRIPT_DIR/scripts/claude.sh"
 
 if [ -n "${GITPOD_WORKSPACE_URL}" ]; then
@@ -18,6 +18,7 @@ if [ -n "${GITPOD_ENVIRONMENT_ID}" ]; then
 fi
 
 npm i -g vsce ovsx
+curl -fsSL https://bun.sh/install | bash
 
 # Install oh-my-zsh
 KEEP_ZSHRC=yes sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"

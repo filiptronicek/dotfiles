@@ -9,16 +9,17 @@ Apply these conventions to all git operations in this workspace.
 
 ## PR Titles
 
-Format: `[component] description`
+Run # Conventional Commits pattern:
+❌ PR title does not follow Conventional Commits format.
 
-Use bracket prefixes indicating the component(s) changed. Multiple components are comma-separated.
+Format: `<type>[optional scope]: <description>`
 
+Valid types: feat, fix, build, chore, ci, docs, style, refactor, perf, test
 Examples:
-- `[dashboard] fix account dropdown`
-- `[backend/api,dashboard] improve watching events`
-- `[flags] update feature flag defaults`
-
-Feature flag update PRs always use a `[flags]` prefix.
+  feat: add user authentication
+  fix(dashboard): resolve login redirect loop
+  refactor!: rename User to Account
+  chore(flags): enable <experiment-name> for all users
 
 ## Branch Naming
 
